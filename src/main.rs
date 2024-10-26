@@ -9,7 +9,7 @@ fn main() {
     let mut attempts = 0;
 
     loop {
-        println!("input your guess: ");
+        println!("input your guess: [1 - 100]");
 
         let mut guess = String::new();
 
@@ -22,6 +22,11 @@ fn main() {
                     continue;
                 }
                 attempts += 1;
+
+                if attempts >= 7 {
+                    println!("those are 7 attempts so far. sorry, you lost :)");
+                    break;
+                }
                 num
             }
             Err(_) => {
