@@ -1,4 +1,5 @@
 /target/*
-!target/debug/
 /target/debug/*
-!target/debug/guessing_game.exe
+!target/release
+/target/release/*
+!target/release/guessing_game.exe
